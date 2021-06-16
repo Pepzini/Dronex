@@ -1,0 +1,158 @@
+:root {
+   --purple : #00509d;
+   --black-background : #0F110C;
+   --text-color: #00171f;
+   --white-background: #ffffff;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  background-color: var(--white-background);
+  color: var(--text-color);
+}
+/*Styling for the navbar*/
+.slider {
+  background: #333;
+  height: 400px;
+  width: 100%;
+}
+
+#logo {
+  background: #ccc;
+  width: 150px;
+  height: 70px;
+}
+
+.navbar-toggler {
+  margin-top: 15px;
+}
+/*Styling for the landing page*/
+#landing-page {
+  min-height: 70vh;
+  background-image: url(../images/bg-darkened.png);
+  background-size: cover;
+}
+#landing-page button{
+  margin-right: 1em;
+  margin-left: 1em;
+}
+.landing-text {
+  text-align: left;
+  margin-top: 5em;
+  margin-bottom: 1em;
+  color: #fff;
+}
+
+.about-text{
+  margin: 2em;
+  text-align: justify;
+}
+#about{
+  min-height: 50vh;
+  padding: : 2em;
+  background-color: #fff;
+  color: #000;
+}
+.about-image{
+  background-image: url(./images/drone-about.png);
+  background-size: 50%;
+  height: 50%;
+}
+#service{
+ padding: 2em;
+ background-color: #f8f9fa;
+}
+.bordered-columns{
+  border: 2px dotted #CECCCC;
+  padding: 18px;
+  text-align: justify;
+  margin: 6px;
+  height: 220px;
+}
+.bordered-columns-2{
+  background-color: #fff;
+  color: #000;
+  border: 2px dotted var(--purple);
+  padding: 18px;
+  text-align: justify;
+  margin: 6px;
+  height: 220px;
+}
+/*the colored box shows the code for the colored columns*/
+.colored-columns{
+  background-color: var(--purple);
+  color: #ffffff;
+}
+/*partnership*/
+#partnership{
+  padding: 2em;
+  color: #ffffff;
+  background-color: var(--purple);
+  text-align: justify;
+}
+.partner-heading{
+  text-align: center;
+}
+
+.partnership-sidebar{
+   background-image: url(../images/partner.png);
+   background-size: cover;
+   height: 500px;
+   width: 100%;
+   margin-top: 8em;
+   padding-top: 25px;
+}
+.partnership-sidebar-text{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  line-height: 0.7cm;
+  margin-bottom: 3em;
+  margin-left: 2em;
+}
+
+.partnership-button{
+  text-align: center;
+  background-color: var(--purple);
+  color: #fff;
+  padding: 10px;
+  border: 1px solid var(--purple);
+}
+.steps{
+  padding: 12px;
+}
+#call-to-action{
+  background-color: var(--purple);
+  height: 25vh;
+  color: #fff;
+  text-align: left;
+  padding: 3em;
+
+}
+#call-to-action button{
+  background-color: #fff;
+  color: var(--purple);
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bolder;
+  border: 1px solid #fff;
+  position: absolute;
+  right: 0;
+}
+/*What is special*/
+#special{
+  margin-top: 4em;
+  text-align: justify;
+  padding: 10px;
+}
+.icon{
+  text-align: center;
+  padding: 2em;
+  color: #00509d;
+}
+footer{
+  text-align: center;
+  border:1px solid var(--purple);
+}
