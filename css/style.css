@@ -12,25 +12,10 @@ body{
   background-color: var(--white-background);
   color: var(--text-color);
 }
-/*Styling for the navbar*/
-.slider {
-  background: #333;
-  height: 400px;
-  width: 100%;
-}
 
-#logo {
-  background: #ccc;
-  width: 150px;
-  height: 70px;
-}
-
-.navbar-toggler {
-  margin-top: 15px;
-}
 /*Styling for the landing page*/
 #landing-page {
-  min-height: 70vh;
+  min-height: 90vh;
   background-image: url(../images/bg-darkened.png);
   background-size: cover;
 }
@@ -125,11 +110,10 @@ body{
 }
 #call-to-action{
   background-color: var(--purple);
-  height: 25vh;
+  min-height: 25vh;
   color: #fff;
-  text-align: left;
-  padding: 3em;
-
+  padding: 5em;
+  text-align: justify;
 }
 #call-to-action button{
   background-color: #fff;
@@ -138,8 +122,7 @@ body{
   font-size: 20px;
   font-weight: bolder;
   border: 1px solid #fff;
-  position: absolute;
-  right: 0;
+
 }
 /*What is special*/
 #special{
@@ -154,5 +137,6 @@ body{
 }
 footer{
   text-align: center;
+  font-weight: bold;
   border:1px solid var(--purple);
 }
