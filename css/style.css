@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 :root {
    --purple : #00509d;
    --black-background : #0F110C;
@@ -8,37 +10,110 @@ html{
   scroll-behavior: smooth;
 }
 body{
+  font-family:'Open Sans', sans-serif;
   margin: 0;
   background-color: var(--white-background);
   color: var(--text-color);
 }
+body h1,h2{
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+}
+/* general styling for the buttons */
+button{
+  background-color: #00509d;
+  padding: 15px 20px;
+  margin: 10px;
+  border: none;
+  box-shadow: 0px 1px 3px #abc6df;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  text-transform: capitalize;
+  border-radius: 3px;
+}
+button:focus{
+  outline: none;
+}
+button:active{
+  transform: scale(0.95);
+}
+/* The sytling for the nav bar and everything that is in it */
+.logo{
+   font-weight: bold;
+   color: #00509d;
+}
+nav a{
+  text-decoration: none;
+}
+nav a:hover{
+  text-decoration: none;
+}
+nav li{
+  padding: 0 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: dimgray;
+}
 
 /*Styling for the landing page*/
 #landing-page {
-  min-height: 90vh;
-  background-image: url(../images/bg-darkened.png);
+ min-height: 80vh;
+ background-image: url(../images/drone-2816244_1920.jpg);
+ /* Image by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2816244">Gerd Altmann</a> 
+ from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2816244">Pixabay</a> */
   background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
-#landing-page button{
-  margin-right: 1em;
-  margin-left: 1em;
+#landing-page::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #031322d2;
 }
+.landing-container{
+  z-index: 10;
+}
+.landing-container h1{
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 50px;
+}
+.landing-container p{
+  font-style: italic;
+  letter-spacing: 3px;
+}
+.landing-buttons{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
 .landing-text {
-  text-align: left;
-  margin-top: 5em;
-  margin-bottom: 1em;
+  text-align: center;
   color: #fff;
 }
 
-.about-text{
-  margin: 2em;
-  text-align: justify;
-}
 #about{
   min-height: 50vh;
-  padding: : 2em;
+  padding: 0 2em;
   background-color: #fff;
   color: #000;
+}
+#about h2{
+   padding: 10px;
+}
+.about-text{
+  text-align: justify;
+  padding: 10px 0;
 }
 .about-image{
   background-image: url(./images/drone-about.png);
@@ -51,6 +126,7 @@ body{
 }
 .bordered-columns{
   border: 2px dotted #CECCCC;
+  box-shadow: 0px 2px 4px #abc6df;
   padding: 18px;
   text-align: justify;
   margin: 6px;
@@ -60,6 +136,7 @@ body{
   background-color: #fff;
   color: #000;
   border: 2px dotted var(--purple);
+  box-shadow: 0px 2px 4px #abc6df;
   padding: 18px;
   text-align: justify;
   margin: 6px;
@@ -86,49 +163,52 @@ body{
    background-size: cover;
    height: 500px;
    width: 100%;
-   margin-top: 8em;
+   margin-top: 2em;
    padding-top: 25px;
+   position: relative;
 }
 .partnership-sidebar-text{
   position: absolute;
-  bottom: 0;
-  left: 0;
-  line-height: 0.7cm;
-  margin-bottom: 3em;
-  margin-left: 2em;
+  bottom: 20px;
+  left: 5px;
+  line-height: 1.5em;
 }
 
-.partnership-button{
-  text-align: center;
-  background-color: var(--purple);
-  color: #fff;
-  padding: 10px;
-  border: 1px solid var(--purple);
-}
+
 .steps{
   padding: 12px;
 }
 #call-to-action{
   background-color: var(--purple);
   min-height: 25vh;
+  padding: 2em;
   color: #fff;
-  padding: 5em;
-  text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
 }
 #call-to-action button{
   background-color: #fff;
   color: var(--purple);
   padding: 20px;
-  font-size: 20px;
-  font-weight: bolder;
-  border: 1px solid #fff;
-
+  margin-right: auto;
+  font-weight: bold;
 }
+
 /*What is special*/
 #special{
-  margin-top: 4em;
+  display: flex;
+  align-items: center;
+  min-height: 65vh;
+  padding-top: 4em;
   text-align: justify;
   padding: 10px;
+}
+#special .col-sm{
+  margin: 10px;
+  box-shadow: 0px 2px 4px #abc6df;
 }
 .icon{
   text-align: center;
@@ -137,6 +217,9 @@ body{
 }
 footer{
   text-align: center;
-  font-weight: bold;
-  border:1px solid var(--purple);
+  background-color: #00509d;
+  color: #fff;
+  border-top: 1px solid #fff;
+  letter-spacing: 1px;
+  font-size: 15px;
 }

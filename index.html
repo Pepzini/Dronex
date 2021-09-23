@@ -12,102 +12,74 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: transparent">
+    <a class="navbar-brand d-lg-none" href="#"><h3 class="logo">DronNex</h3></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbarToggler7"
+        aria-controls="myNavbarToggler7" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="myNavbarToggler7">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <a class="d-none d-lg-block" href="#"><h3 class="logo">DronNex</h3></a>
+            <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
   <section id="landing-page">
-    <header>
-              <nav class="navbar navbar-expand-lg">
-                  <div class="container-fluid">
+    <div class="landing-container">
+      <div class="landing-text">
+        <h1>Welcome to the future of delivery</h1>
+        <p>With speed at its peak, we ensure your package is safe and fast.</p>
 
-                      <!-- logo -->
-                      <a href="index.html" class="navbar-brand logo">
-                          <h3> Girl Power</h3>
-                      </a>
-                      <!-- logo end -->
-                      <!-- menu button -->
-                      <button class="navbar-toggler" id="navbar-toggle" type="button" data-toggle="collapse"
-                          data-target="#nav">
-                          <i class="fa fa-bars" style="color: blue;"></i>
-                      </button>
-                      <!-- menu btn end -->
-                      <!-- nav links -->
+      </div>
 
-                      <div class="collapse navbar-collapse" id="nav">
-                          <ul class="nav ml-auto nav-pills nav-fill">
-                              <li class="nav-items">
-                                  <a href="#" class="nav-link ">
-                                      Home
-                                  </a>
-                              </li>
-                              <li class="nav-items">
-                                  <a href="#services" class="nav-link">
-                                      Your Power
-                                  </a>
-                              </li>
-                              <li class="nav-items">
-                                  <a href="#about" class="nav-link ">
-                                      About Us
-                                  </a>
-                              </li>
-                              <li class="nav-items">
-                                  <a href="#contact" class="nav-link">
-                                      Contact
-                                  </a>
-                              </li>
-                          </ul>
-                          <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-         <button class="btn btn-outline-success" type="submit">Search</button>
-         </form>
-                      </div>
-                      <!-- nav-link end -->
-              </nav>
-              <!-- container end -->
-      </header>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm landing-text">
-          <h1>Welcome to the future of delivery</h1>
-          <h3>Speed at its peak</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-        </div>
+      <div class="landing-buttons">
+        <button id="button">Learn More</button>
+        <button id="button">Book Delivery</button>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <button type="button" class="btn btn-primary btn-lg">Large button</button>
-        <button type="button" class="btn btn-secondary btn-lg">Large button</button>
-      </div>
-    </div>
-    </div>
+
   </section>
   <section id="about">
-    <div class="">
-      <div class="row">
-        <div class="col sm about-text">
-          <h2>
-            About Dron<span class="highlight-text">Nex</span>
-          </h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium nesciunt laborum natus doloribus
-            fugiat cumque quibusdam id tenetur assumenda tempore animi ad ab, nulla sed quis nam ducimus asperiores
-            sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. In similique minima voluptatibus? Amet
-            dolorem velit illum cupiditate, sequi nulla ad maxime magnam recusandae autem quisquam molestias dicta modi
-            animi facilis?</p>
-        </div>
-        <div class="col-sm about-image">
-          <img src="./images/bg-darkened.png" alt="about-image" width="100%" height="400px">
-        </div>
+    <h2 style="text-align: center;">
+      About Dron<span class="highlight-text">Nex</span>
+    </h2>
+    <div class="row">
+      <div class="col-sm about-image">
+        <img src="./images/bg-darkened.png" alt="about-image" width="100%" height="400px">
+      </div>
+      <div class="col sm about-text">
+        
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium nesciunt laborum natus doloribus
+          fugiat cumque quibusdam id tenetur assumenda tempore animi ad ab, nulla sed quis nam ducimus asperiores
+          sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. In similique minima voluptatibus? Amet
+          dolorem velit illum cupiditate, sequi nulla ad maxime magnam recusandae autem quisquam molestias dicta modi
+          animi facilis?</p>
+        <button style="margin-left: auto;">Book delivery</button>
       </div>
     </div>
+
   </section>
 
   <section id="service">
-    <div class="">
+      <h2>
+        Services
+      </h2>
       <div class="row">
         <div class="col-md-4">
           <div class="service-text">
-            <h2>
-              Services
-            </h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
@@ -135,61 +107,59 @@
           </div>
         </div>
 
-      </div>
+
   </section>
   <section id="partnership">
-    <div class="">
-      <div class="row">
-        <div class="col-md-8">
-          <div class="partner-heading">
-            <h1>Become a <span class="highlight-text">Partner</span> </h1>
-            <p>Be a partner at DroneX with four easy steps</p>
+    <div class="partner-heading">
+      <h2>Become a <span class="highlight-text">Partner</span> </h2>
+      <p>Be a partner at DroneX with four easy steps</p>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row steps">
+          <div class="col-sm bordered-columns-2">
+            <h3>Step 1</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+              reprehenderit dolorum
+              delectus iusto odio ratione praesentium dolore ipsum consectetur?</p>
           </div>
-          <div class="row steps">
-            <div class="col-sm bordered-columns-2">
-              <h3>Step 1</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
-                reprehenderit dolorum
-                delectus iusto odio ratione praesentium dolore ipsum consectetur?</p>
-            </div>
-            <div class="col-sm bordered-columns">
-              <h3>Step 2</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
-                reprehenderit dolorum
-                delectus iusto odio ratione praesentium dolore ipsum consectetur?</p>
-            </div>
-          </div>
-          <div class="row steps">
-            <div class="col-sm bordered-columns">
-              <h3>step 3</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
-                reprehenderit dolorum
-                delectus iusto odio ratione praesentium dolore ipsum consectetur?</p>
-            </div>
-            <div class="col-sm bordered-columns-2">
-              <h3>Step 4</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
-                reprehenderit dolorum
-                delectus iusto odio ratione praesentium dolore ipsum consectetur?</p>
-            </div>
+          <div class="col-sm bordered-columns">
+            <h3>Step 2</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+              reprehenderit dolorum
+              delectus iusto odio ratione praesentium dolore ipsum consectetur?</p>
           </div>
         </div>
-        <div class="col-md-4 partnership-sidebar">
-
-          <div class="col-md-6 partnership-sidebar-text">
-            <p>Over <br> <span style="font-size: 40px">15+</span> <br> customers </p>
-            <button type="button" name="Partnership-sign-up" class="partnership-button">Sign me up</button>
+        <div class="row steps">
+          <div class="col-sm bordered-columns">
+            <h3>step 3</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+              reprehenderit dolorum
+              delectus iusto odio ratione praesentium dolore ipsum consectetur?</p>
+          </div>
+          <div class="col-sm bordered-columns-2">
+            <h3>Step 4</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+              reprehenderit dolorum
+              delectus iusto odio ratione praesentium dolore ipsum consectetur?</p>
           </div>
         </div>
       </div>
-
+      <div class="col-md-4 partnership-sidebar">
+        <div class="col-md-6 partnership-sidebar-text">
+          <p>Over <br /> <span style="font-size: 40px">15+</span> <br /> customers </p>
+          <button style="margin-left: auto;" class="partnership-button">Sign me up</button>
+        </div>
+      </div>
     </div>
+
+
 
   </section>
   <section id="special">
     <div class="container">
       <div class="">
-        <h1 style="text-align: center">What is special?</h1>
+        <h2>What is special?</h2>
       </div>
       <div class="row">
         <div class="col-sm">
@@ -221,20 +191,16 @@
     </div>
   </section>
   <section id=call-to-action>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <h1>Become a partner today.</h1>
-        </div>
-        <div class="col-md-4">
-          <button type="button" name="partner">Join Now</button>
-        </div>
-      </div>
+    <div>
+      <h1>Become a partner today.</h1>
+    </div>
+    <div>
+      <button>Join Now</button>
     </div>
   </section>
 
   <footer>
-    DronNeX &copy 2021 | All rights reserved | Website developed by Niniola.
+    DronNex &copy 2021 | All rights reserved | Website developed by Niniola.
   </footer>
 
 
