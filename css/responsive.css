@@ -1,7 +1,19 @@
 
 @media (max-width:600px) {
-  #call-to-action button{
-    margin-left: 65px;
+  #call-to-action{
+    flex-direction: column;
+    
+  }
+  button{
+    background-color: #00509d;
+    padding: 8px 10px;
+    margin: 5px;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+  .landing-container h1{
+    font-size: 35px;
   }
 }
 

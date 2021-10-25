@@ -13,29 +13,40 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: transparent">
-    <a class="navbar-brand d-lg-none" href="#"><h3 class="logo">DronNex</h3></a>
+    <a class="navbar-brand d-lg-none" href="#">
+      <h3 class="logo">DronNex</h3>
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbarToggler7"
-        aria-controls="myNavbarToggler7" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      aria-controls="myNavbarToggler7" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="myNavbarToggler7">
-        <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-            </li>
-            <a class="d-none d-lg-block" href="#"><h3 class="logo">DronNex</h3></a>
-            <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Partnership</a>
+        </li>
+        <a class="d-none d-lg-block mid-logo" href="#">
+          <h3 class="logo">DronNex</h3>
+        </a>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item" data-toggle="modal" data-target="#sign-up-form">
+          <a class="nav-link" href="#">Sign-In</a>
+        </li>
+      </ul>
     </div>
-</nav>
+  </nav>
 
   <section id="landing-page">
     <div class="landing-container">
@@ -58,10 +69,10 @@
     </h2>
     <div class="row">
       <div class="col-sm about-image">
-        <img src="./images/bg-darkened.png" alt="about-image" width="100%" height="400px">
+        <img src="./images/about-image.jpg" alt="a-drone" width="100%" height="400px">
       </div>
       <div class="col sm about-text">
-        
+
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium nesciunt laborum natus doloribus
           fugiat cumque quibusdam id tenetur assumenda tempore animi ad ab, nulla sed quis nam ducimus asperiores
           sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. In similique minima voluptatibus? Amet
@@ -74,38 +85,38 @@
   </section>
 
   <section id="service">
-      <h2>
-        Services
-      </h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="service-text">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-          </div>
+    <h2>
+      Services
+    </h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="service-text">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
         </div>
-        <div class="col-md-8 service-listed">
-          <div class="row">
-            <div class="col-sm bordered-columns">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt dicta
-              eveniet
-              voluptatem
-              debitis distinctio, quaerat, magnam enim dignissimos placeat voluptas odit in eligendi.
-            </div>
-            <div class="col-sm bordered-columns">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
-              reprehenderit dolorum
-              delectus iusto odio ratione praesentium dolore ipsum consectetur? </div>
+      </div>
+      <div class="col-md-8 service-listed">
+        <div class="row">
+          <div class="col-sm bordered-columns">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt dicta
+            eveniet
+            voluptatem
+            debitis distinctio, quaerat, magnam enim dignissimos placeat voluptas odit in eligendi.
           </div>
-          <div class="row">
-            <div class="col-sm bordered-columns">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
-              reprehenderit dolorum
-              delectus iusto odio ratione praesentium dolore ipsum consectetur? </div>
-            <div class="col-sm bordered-columns colored-columns">Lorem ipsum dolor sit amet consectetur, adipisicing
-              elit. Perferendis
-              laborum
-              eum dolor
-              quidem dolorum repellat nesciunt, nostrum cumque, natus soluta. </div>
-          </div>
+          <div class="col-sm bordered-columns">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+            reprehenderit dolorum
+            delectus iusto odio ratione praesentium dolore ipsum consectetur? </div>
         </div>
+        <div class="row">
+          <div class="col-sm bordered-columns">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+            reprehenderit dolorum
+            delectus iusto odio ratione praesentium dolore ipsum consectetur? </div>
+          <div class="col-sm bordered-columns colored-columns">Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Perferendis
+            laborum
+            eum dolor
+            quidem dolorum repellat nesciunt, nostrum cumque, natus soluta. </div>
+        </div>
+      </div>
 
 
   </section>
@@ -163,8 +174,11 @@
       </div>
       <div class="row">
         <div class="col-sm">
+
           <div class="icon">
-            <i class="fa fa-bullseye fa-2x"></i>
+            <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+            <img src="/images/drone.png" alt="drone-icon" width="20%">
           </div>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
             reprehenderit dolorum
@@ -172,7 +186,7 @@
         </div>
         <div class="col-sm">
           <div class="icon">
-            <i class="fa fa-hand-spock fa-2x"></i>
+            <img src="/images/drone.png" alt="drone-icon" width="20%">
           </div>
 
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
@@ -181,7 +195,7 @@
         </div>
         <div class="col-sm">
           <div class="icon">
-            <i class="fa fa-atom fa-2x"></i>
+            <img src="/images/drone.png" alt="drone-icon" width="20%" style="color: blue;">
           </div>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
             reprehenderit dolorum
@@ -198,7 +212,152 @@
       <button>Join Now</button>
     </div>
   </section>
+  <!-- Sign up modal -->
+  <div class="modal fade" id="sign-up-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <h5 class="modal-title" id="exampleModalLabel">Create Account</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- Sign up form -->
+        <form>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="fullName">Full Name (Surname first)</label>
+              <input type="text" class="form-control" id="name" aria-describedby="emailHelp"
+                placeholder="Enter full-name">
+            </div>
+            <div class="form-group">
+              <label for="email1">Email address</label>
+              <input type="email" class="form-control" id="email1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">Your information is safe with us.</small>
+            </div>
+            <div class="form-group">
+              <label for="password1">Password</label>
+              <input type="password" class="form-control" id="password1" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="password1">Confirm Password</label>
+              <input type="password" class="form-control" id="password2" placeholder="Confirm Password">
+            </div>
+          </div>
+          <p style="text-align: center;">Already have an account?
+            <a href="" data-dismiss="modal" data-toggle="modal" data-target="#sign-in-form"><strong>Sign In.</strong>
+            </a>
+          </p>
+          <div class="modal-footer border-top-0 d-flex justify-content-center">
+            <button type="submit" class="btn btn-success">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Sign-in Modal -->
+  <div class="modal fade" id="sign-in-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <h5 class="modal-title" id="exampleModalLabel">Sign-In</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- Sign In form -->
+        <form>
+          <div class="modal-body">
 
+            <div class="form-group">
+              <label for="email1">Email address</label>
+              <input type="email" class="form-control" id="email1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">Your information is safe with us.</small>
+            </div>
+            <div class="form-group">
+              <label for="password1">Password</label>
+              <input type="password" class="form-control" id="password1" placeholder="Password">
+            </div>
+
+          </div>
+          <p style="text-align: center;">Dont't have an account?
+            <a href="" data-dismiss="modal" data-toggle="modal" data-target="#sign-up-form"><strong>Sign Up.</strong>
+            </a>
+          </p>
+          </p>
+          <div class="modal-footer border-top-0 d-flex justify-content-center">
+            <button type="submit" class="btn btn-success">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <h2 style="text-align: center;">Contact Us</h2>
+          <p>
+            Send your love ones a shout out, send out love to your female friends and family.
+          </p>
+          <img src="./images/just-drone.jpg" alt="a-drone" width="90%">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 contact-form">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputMessage">Message</label>
+              <textarea name="inputMessage" class="form-control" cols="20" rows="10"
+                placeholder="Leave a message..."></textarea>
+            </div>
+            <!-- <div class="form-group">
+                      <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="gridCheck">
+                          <label class="form-check-label" for="gridCheck">
+                              Check me out
+                          </label>
+                      </div>
+                  </div> -->
+            <button type="submit" class="btn text-center"
+              style="background-color: #ffffff; color: #00509d;">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="backToTopButton" title="Go to top">
+      <i class="fa fa-arrow-up" style="font-weight: bolder; color: #ffffff;"></i></button>
+  </section>
   <footer>
     DronNex &copy 2021 | All rights reserved | Website developed by Niniola.
   </footer>
